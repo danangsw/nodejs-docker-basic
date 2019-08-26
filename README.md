@@ -10,6 +10,7 @@ To getting understand about this project, you will need to following this tutori
 - Docker installed on your server, following Steps 1 and 2 of [**How To Install and Use Docker on Ubuntu 18.04**](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04).
 - Node.js and npm installed, following these instructions on [**installing with the PPA managed by NodeSource**](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04#installing-using-a-ppa).
 - A Docker Hub account. For an overview of how to set this up, refer to this introduction on [**getting started with Docker Hub**](https://docs.docker.com/docker-hub/).
+- The complete tutorial of [**How To Build a Node.js Application with Docker**](https://www.digitalocean.com/community/tutorials/how-to-build-a-node-js-application-with-docker)
 
 ## Running the packages
 The application images has been pushed in Docker Hub. You can use this images by now.

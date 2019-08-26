@@ -1,6 +1,6 @@
 # nodejs-docker-basic
 
-With project we will create an application of a static website that uses the [Express](https://expressjs.com/) framework and [Bootstrap](https://getbootstrap.com/). 
+With this project we will create an application of a static website that uses the [Express](https://expressjs.com/) framework and [Bootstrap](https://getbootstrap.com/). 
 
 Then we will use the [Docker](https://www.docker.com/) platform to create an `application image`. Then we will package and run the application as `containers` using that image and push in to [Docker Hub](https://hub.docker.com/) for future use. Finally, we will pull the stored image from the Docker Hub repository and build another container, demonstrating how we re-create and scale the application.  
 

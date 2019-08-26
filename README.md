@@ -1,6 +1,6 @@
 # nodejs-docker-basic
 
-This project we will create an application of a static website that uses the [Express](https://expressjs.com/) framework and [Bootstrap](https://getbootstrap.com/). 
+With project we will create an application of a static website that uses the [Express](https://expressjs.com/) framework and [Bootstrap](https://getbootstrap.com/). 
 
 Then we will use the [Docker](https://www.docker.com/) platform to create an `application image`. Then we will package and run the application as `containers` using that image and push in to [Docker Hub](https://hub.docker.com/) for future use. Finally, we will pull the stored image from the Docker Hub repository and build another container, demonstrating how we re-create and scale the application.  
 
@@ -81,4 +81,4 @@ Visit `http://your_host_ip` once again to view your running application.
 - [**How To Migrate a Docker Compose Workflow to Kubernetes**](https://www.digitalocean.com/community/tutorials/how-to-migrate-a-docker-compose-workflow-to-kubernetes)
 - Completing the series of tutorial [**From Containers to Kubernetes with Node.js**](https://www.digitalocean.com/community/tutorial_series/from-containers-to-kubernetes-with-node-js).  The series also includes information on deploying your app with Docker Compose using an Nginx reverse proxy and Let’s Encrypt.
 
-If you are interested in other Docker-related topics, please see our complete library of [Docker tutorials](https://www.digitalocean.com/community/tags/docker/tutorials).
+If you are interested in other Docker-related topics, here is the [Docker tutorials](https://www.digitalocean.com/community/tags/docker/tutorials) for recommended reading.

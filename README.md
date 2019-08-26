@@ -120,6 +120,17 @@ Compose pulls a application image and starts the services you defined. In this c
 
 Enter `http://your_host_ip` in a browser to see the application running.
 
+You can stop your runnning service with this command:
+
+```bash
+docker-compose stop
+```
+
+```bash
+# Output sample:
+Stopping nodejs-docker-basic_web_1 ... done
+```
+
 ## Next steps
 - [**How To Migrate a Docker Compose Workflow to Kubernetes**](https://www.digitalocean.com/community/tutorials/how-to-migrate-a-docker-compose-workflow-to-kubernetes)
 - Completing the series of tutorial [**From Containers to Kubernetes with Node.js**](https://www.digitalocean.com/community/tutorial_series/from-containers-to-kubernetes-with-node-js).  The series also includes information on deploying your app with Docker Compose using an Nginx reverse proxy and Let’s Encrypt.

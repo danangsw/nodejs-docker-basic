@@ -8,6 +8,7 @@ Then we will use the [Docker](https://www.docker.com/) platform to create an `ap
 To getting understand about this project, you will need to following this tutorial:
 - One Ubuntu 18.04 server, set up following this [**Initial Server Setup guide**](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04).
 - Docker installed on your server, following Steps 1 and 2 of [**How To Install and Use Docker on Ubuntu 18.04**](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04).
+- Make easier orchestrate the processes of Docker containers, by following this tutorial of [**How To Install Docker Compose on Ubuntu 18.04.**](https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-18-04)
 - Node.js and npm installed, following these instructions on [**installing with the PPA managed by NodeSource**](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04#installing-using-a-ppa).
 - A Docker Hub account. For an overview of how to set this up, refer to this introduction on [**getting started with Docker Hub**](https://docs.docker.com/docker-hub/).
 - The complete tutorial of [**How To Build a Node.js Application with Docker**](https://www.digitalocean.com/community/tutorials/how-to-build-a-node-js-application-with-docker)
@@ -120,7 +121,6 @@ Compose pulls a application image and starts the services you defined. In this c
 Enter `http://your_host_ip` in a browser to see the application running.
 
 ## Next steps
-- [**<strike>How To Install Docker Compose on Ubuntu 18.04.</strike>**](https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-18-04)
 - [**How To Migrate a Docker Compose Workflow to Kubernetes**](https://www.digitalocean.com/community/tutorials/how-to-migrate-a-docker-compose-workflow-to-kubernetes)
 - Completing the series of tutorial [**From Containers to Kubernetes with Node.js**](https://www.digitalocean.com/community/tutorial_series/from-containers-to-kubernetes-with-node-js).  The series also includes information on deploying your app with Docker Compose using an Nginx reverse proxy and Let’s Encrypt.
 

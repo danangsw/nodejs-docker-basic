@@ -1,6 +1,25 @@
 version: '3'
+
 services:
   web:
-    image: danangsukma/nodejs-docker-basic
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: nodejs-docker-compose
+    container_name: nodejs-docker-compose
+    restart: unless-stopped
     ports:
       - "80:8080"
+    volumes:
+    - .:/home/node/app
+    - node_modules:/home/node/app/node_modules
+    networks:
+      - app-network
+    command: /home/node/app/node_modules/.bin/nodemon app.js
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  node_modules:  

@@ -83,37 +83,46 @@ Create a file called `docker-compose.yml` in root project directory and paste th
 
 ```yaml
 version: '3'
+
 services:
   web:
-    image: danangsukma/nodejs-docker-basic
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: nodejs-docker-compose
+    container_name: nodejs-docker-compose
+    restart: unless-stopped
     ports:
       - "80:8080"
+    volumes:
+    - .:/home/node/app
+    - node_modules:/home/node/app/node_modules
+    networks:
+      - app-network
+    command: /home/node/app/node_modules/.bin/nodemon app.js
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  node_modules:  
 ```
 
 ### Build and run your app with Compose
 From your project directory, start up your application by running:
 
 ```bash
-docker-compose up
+docker-compose up -d
 ```
 ```bash
 # Sample Ouput:
-Pulling web (danangsukma/nodejs-docker-basic:)...
-latest: Pulling from danangsukma/nodejs-docker-basic
-e7c96db7181b: Pull complete
-50958466d97a: Pull complete
-56174ae7ed1d: Pull complete
-284842a36c0d: Pull complete
-9261e03ba7aa: Pull complete
-2e57fb26e018: Pull complete
-20ff2dcea87f: Pull complete
-47c93d31e9d1: Pull complete
-Digest: sha256:1bb39800d4a1221a39084dc55ecde01affe0b205cf088d712fb746afb927baa3
-Status: Downloaded newer image for danangsukma/nodejs-docker-basic:latest
-Creating nodejs-docker-basic_web_1 ... done
-Attaching to nodejs-docker-basic_web_1
-web_1  | Example app listening on port 8080!
-
+Creating network "nodejs-docker-basic_app-network" with driver "bridge"
+Creating volume "nodejs-docker-basic_node_modules" with default driver
+Building web
+Step 1/9 : FROM node:10-alpine
+10-alpine: Pulling from library/node
+...
 ```
 
 Compose pulls a application image and starts the services you defined. In this case, the code is statically copied into the image at build time.
@@ -123,12 +132,14 @@ Enter `http://your_host_ip` in a browser to see the application running.
 You can stop your runnning service with this command:
 
 ```bash
-docker-compose stop
+docker-compose down
 ```
 
 ```bash
 # Output sample:
-Stopping nodejs-docker-basic_web_1 ... done
+Stopping nodejs-docker-compose ... done
+Removing nodejs-docker-compose ... done
+Removing network nodejs-docker-basic_app-network
 ```
 
 ## Next steps
@@ -136,3 +147,9 @@ Stopping nodejs-docker-basic_web_1 ... done
 - Completing the series of tutorial [**From Containers to Kubernetes with Node.js**](https://www.digitalocean.com/community/tutorial_series/from-containers-to-kubernetes-with-node-js).  The series also includes information on deploying your app with Docker Compose using an Nginx reverse proxy and Let’s Encrypt.
 
 If you are interested in other Docker-related topics, here is the [Docker tutorials](https://www.digitalocean.com/community/tags/docker/tutorials) for recommended reading.
+
+
+## Other intersting references
+- 4 Steps to [Install Kubernetes on Ubuntu](https://matthewpalmer.net/kubernetes-app-developer/articles/install-kubernetes-ubuntu-tutorial.html) 16.04 and 18.04
+
+- [Containerizing a Node.js Application for Development With Docker Compose](https://www.digitalocean.com/community/tutorials/containerizing-a-node-js-application-for-development-with-docker-compose)

@@ -82,7 +82,7 @@ Visit `http://your_host_ip` once again to view your running application.
 Create a file called `docker-compose.yml` in root project directory and paste the following:
 
 ```yaml
-version: '0.1'
+version: '3'
 services:
   web:
     image: danangsukma/nodejs-docker-basic

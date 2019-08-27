@@ -144,12 +144,12 @@ Removing network nodejs-docker-basic_app-network
 
 ## Next steps
 - [**How To Migrate a Docker Compose Workflow to Kubernetes**](https://www.digitalocean.com/community/tutorials/how-to-migrate-a-docker-compose-workflow-to-kubernetes)
-- Completing the series of tutorial [**From Containers to Kubernetes with Node.js**](https://www.digitalocean.com/community/tutorial_series/from-containers-to-kubernetes-with-node-js).  The series also includes information on deploying your app with Docker Compose using an Nginx reverse proxy and Let’s Encrypt.
+- Completing the series of tutorial [**From Containers to Kubernetes with Node.js**](httAps://www.digitalocean.com/community/tutorial_series/from-containers-to-kubernetes-with-node-js).  The series also includes information on deploying your app with Docker Compose using an Nginx reverse proxy and Let’s Encrypt.
 
 If you are interested in other Docker-related topics, here is the [Docker tutorials](https://www.digitalocean.com/community/tags/docker/tutorials) for recommended reading.
 
 
-## Other intersting references
+## Other interesting references
 - 4 Steps to [Install Kubernetes on Ubuntu](https://matthewpalmer.net/kubernetes-app-developer/articles/install-kubernetes-ubuntu-tutorial.html) 16.04 and 18.04
 
-- [Containerizing a Node.js Application for Development With Docker Compose](https://www.digitalocean.com/community/tutorials/containerizing-a-node-js-application-for-development-with-docker-compose)
+- The complete tutorial of How to [Containerizing a Node.js Application for Development With Docker Compose](https://www.digitalocean.com/community/tutorials/containerizing-a-node-js-application-for-development-with-docker-compose)

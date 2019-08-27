@@ -14,7 +14,7 @@ To getting understand about this project, you will need to following this tutori
 - The complete tutorial of [**How To Build a Node.js Application with Docker**](https://www.digitalocean.com/community/tutorials/how-to-build-a-node-js-application-with-docker)
 
 ## Running the packages
-The application images has been pushed in Docker Hub. You can use this images by now.
+The application image of this project has been pushed in Docker Hub. You can use this images by now.
 
 Login to your Docker Hub:
 
